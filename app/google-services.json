@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "252088541616",
+    "firebase_url": "https://trabalhopp-7e58e-default-rtdb.firebaseio.com",
+    "project_id": "trabalhopp-7e58e",
+    "storage_bucket": "trabalhopp-7e58e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252088541616:android:3692403c70b541bb1bf675",
+        "android_client_info": {
+          "package_name": "br.edu.ifsp.aulawsretrofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252088541616-kf8rprn5k5gso2cmvsadpbcuvrbnkv8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEZfnNlqcjcm7T0gserCdzXZImfvRWl00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252088541616-kf8rprn5k5gso2cmvsadpbcuvrbnkv8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

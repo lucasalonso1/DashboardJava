@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:orientation="vertical"
+    android:background="#2a2f4a"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:text="TRABALHO PP"
+        android:layout_alignParentLeft="true"
+        android:textSize="25dp"
+        android:typeface="sans"/>
+    <TextView
+        android:id="@+id/tvNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:text="LUCAS e LUIZ"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/tvName"/>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:layout_below="@id/tvNames"
+        android:background="@android:drawable/divider_horizontal_bright" />
+    <TextView
+        android:id="@+id/tvValores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="VALORES"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/divider"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/tvTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Temperatura: "
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvValores"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvValores"
+        android:layout_toRightOf="@+id/tvTempText"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/tvVelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="25dp"
+        android:text="Velocidade: "
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/tvTempText"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/tvVelocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvTemp"
+        android:layout_toRightOf="@+id/tvVelText"
+        android:visibility="visible"/>
+    <com.jjoe64.graphview.GraphView
+        android:layout_below="@id/tvVelocidade"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:id="@+id/graph" />
+</RelativeLayout>
